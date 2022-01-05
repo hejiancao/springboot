@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>登录</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<form>
+    <h1 th:text="#{login.tip}">Please sign in</h1>
+    <label th:text="#{login.username}">username</label>
+    <input name="username" placeholder="username"/>
+
+    <label th:text="#{login.password}">password</label>
+    <input name="password" placeholder="password"/>
+
+    <button th:text="#{login.button}">Sign in</button>
+    <a href="home.html">首页</a>
+
+    <a th:href="@{/login(lang='zh_CN')}">中文</a>
+    <a th:href="@{/login(lang='en_US')}">English</a>
+    <a th:href="@{/login(lang='ja_JP')}">日本語</a>
+</form>
+
+</body>
+</html>
