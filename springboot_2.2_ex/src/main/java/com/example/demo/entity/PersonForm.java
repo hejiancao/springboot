@@ -1,18 +1,23 @@
 package com.example.demo.entity;
 
+import javax.validation.Valid;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 public class PersonForm {
 
-    @NotNull
+    @NotNull(message = "name不能为空")
     @Size(min=2, max=30)
     private String name;
 
-    @NotNull
+    @NotNull(message = "age不能为空")
     @Min(18)
     private Integer age;
+
+    @Valid
+    @NotNull(message = "user不能为空")
+    private User user;
 
     public String getName() {
         return this.name;
@@ -30,8 +35,38 @@ public class PersonForm {
         this.age = age;
     }
 
-    public String toString() {
-        return "Person(Name: " + this.name + ", Age: " + this.age + ")";
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    private static class User {
+
+        private int id;
+
+        @NotNull(message = "userName不能为空")
+        @Valid
+        private String userName;
+
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public String getUserName() {
+            return userName;
+        }
+
+        public void setUserName(String userName) {
+            this.userName = userName;
+        }
     }
 }
 
