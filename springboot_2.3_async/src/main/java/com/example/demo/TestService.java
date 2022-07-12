@@ -16,13 +16,11 @@ public class TestService {
 
     @Async
     public void async() {
-        for (int i = 1; i < 10; i++) {
-            logger.info("asycn excuting...");
-            try {
-                Thread.sleep(1000L);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        logger.info("asycn excuting...");
+        try {
+            Thread.sleep(1000L);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 }

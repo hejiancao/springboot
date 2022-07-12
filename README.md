@@ -1,8 +1,6 @@
-# SpringBoot
-
-# 目录
-
 [TOC]
+
+# SpringBoot
 
 ### springboot如何实现热部署
 
@@ -180,14 +178,14 @@ druid包含了mybatis的依赖
 
 ```xml
 <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>1.0.29</version>
+    <groupId>com.alibaba</groupId>
+    <artifactId>druid</artifactId>
+    <version>1.0.29</version>
 </dependency>
 <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <scope>runtime</scope>
 </dependency>
 ```
 

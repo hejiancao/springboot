@@ -18,7 +18,9 @@ public class TestController {
     @GetMapping("/")
     public void contextLoads() {
         System.out.println("main--start");
-        testService.async();
+        for (int i = 0; i < 10; i++) {
+            testService.async();
+        }
         System.out.println("main--end");
     }
 
