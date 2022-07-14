@@ -10,13 +10,10 @@ bean，那么改如何提高我们的单元测试效率呢。
 ## webEnvironment
 这个属性决定了要不要启动web环境，说白了就是要不要启动tomcat容器，可选值为
 
-1. `MOCK`：启动一个模拟的 Servlet 环境，这是默认值。
-
-2. `RANDOM_PORT`：启动一个 Tomcat 容器，并监听一个随机的端口号
-
-3. `DEFINED_PORT`：启动一个 Tomcat 容器，并监听配置文件中定义的端口（未定义则默认监听8080）
-
-4. `NONE`：不启动 Tomcat 容器
+* `MOCK`：启动一个模拟的 Servlet 环境，这是默认值。
+* `RANDOM_PORT`：启动一个 Tomcat 容器，并监听一个随机的端口号
+* `DEFINED_PORT`：启动一个 Tomcat 容器，并监听配置文件中定义的端口（未定义则默认监听8080）
+* `NONE`：不启动 Tomcat 容器
 
 如果你要测试的方法不需要用到 Tomcat 容器，比如：
 * 测试一个 DAO 类的增删改查
