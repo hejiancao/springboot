@@ -14,6 +14,13 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-draw</name>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
+        </dependency>
+    </dependencies>
+
 
 
     <build>

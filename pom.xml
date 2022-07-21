@@ -28,6 +28,7 @@
         <elasticsearch.version>6.2.4</elasticsearch.version>
         <poi.version>3.14</poi.version>
         <dom4j.version>2.1.1</dom4j.version>
+        <pdfbox.version>2.0.6</pdfbox.version>
     </properties>
 
     <modules>
@@ -184,6 +185,11 @@
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi-ooxml</artifactId>
                 <version>${poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.pdfbox</groupId>
+                <artifactId>pdfbox</artifactId>
+                <version>${pdfbox.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
